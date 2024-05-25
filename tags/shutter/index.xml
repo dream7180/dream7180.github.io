@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Shutter - 标签 - 洼泥 - [foobox 博客]</title>
+        <link>https://dream7180.github.io/tags/shutter/</link>
+        <description>Shutter - 标签 - 洼泥 - [foobox 博客]</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 15 Mar 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://dream7180.github.io/tags/shutter/" rel="self" type="application/rss+xml" /><item>
+    <title>Shutter图像浏览器 (原ExifPro)，最新 1.4.1 版</title>
+    <link>https://dream7180.github.io/2023/shutter/</link>
+    <pubDate>Wed, 15 Mar 2023 00:00:00 &#43;0000</pubDate>
+    <author>dreamawake</author>
+    <guid>https://dream7180.github.io/2023/shutter/</guid>
+    <description><![CDATA[Shutter 基于停止开发的 ExifPro ( <a href="https://github.com/mikekov/ExifPro" target="_blank" rel="noopener noreffer ">https://github.com/mikekov/ExifPro</a> ), 是一个优秀的图像浏览，查看及管理工具, 使用 VC++ 开发, 小巧快速, 支持查看丰富的 EXIF 信息, 非常适用于查看您的 RAW 数字照片和其他常规图像.]]></description>
+</item>
+</channel>
+</rss>

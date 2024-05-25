@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>linux - 分类 - 洼泥 - [foobox 博客]</title>
+        <link>https://dream7180.github.io/categories/linux/</link>
+        <description>linux - 分类 - 洼泥 - [foobox 博客]</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 19 Feb 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://dream7180.github.io/categories/linux/" rel="self" type="application/rss+xml" /><item>
+    <title>Archlinux 的安装指引：nvme &#43; uefi</title>
+    <link>https://dream7180.github.io/2023/linux-archlinux-installation/</link>
+    <pubDate>Sun, 19 Feb 2023 00:00:00 &#43;0000</pubDate>
+    <author>dreamawake</author>
+    <guid>https://dream7180.github.io/2023/linux-archlinux-installation/</guid>
+    <description><![CDATA[Archlinux 由于没有图像安装方式，让很多人望而止步。其实她的安装步骤和其他发行版并没有什么区别，只是没有封装的图形交互界面，冷冷的命令行仿佛在劝告没有基础的人别去碰她。我的建议是越早使用 archlinux 越好，不怕开始的困难，迈过以后或许你会发现这根本就不算困难。]]></description>
+</item>
+</channel>
+</rss>

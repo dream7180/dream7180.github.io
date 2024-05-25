@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Archlinux 的安装指引：nvme &#43; uefi - 洼泥 - [foobox 博客]</title><meta name="Description" content="Archlinux 的安装指引：nvme &#43; uefi 引导"><meta property="og:title" content="Archlinux 的安装指引：nvme &#43; uefi" />
+<meta property="og:description" content="Archlinux 的安装指引：nvme &#43; uefi 引导" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://dream7180.github.io/2023/linux-archlinux-installation/" /><meta property="og:image" content="https://dream7180.github.io/logo.svg"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-02-19T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-02-19T00:00:00+00:00" /><meta property="og:site_name" content="洼泥" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://dream7180.github.io/logo.svg"/>
+
+<meta name="twitter:title" content="Archlinux 的安装指引：nvme &#43; uefi"/>
+<meta name="twitter:description" content="Archlinux 的安装指引：nvme &#43; uefi 引导"/>
+<meta name="application-name" content="洼泥">
+<meta name="apple-mobile-web-app-title" content="洼泥"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://dream7180.github.io/2023/linux-archlinux-installation/" /><link rel="prev" href="https://dream7180.github.io/2023/foobar2000-green/" /><link rel="next" href="https://dream7180.github.io/2023/shutter/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Archlinux 的安装指引：nvme + uefi",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/dream7180.github.io\/2023\/linux-archlinux-installation\/"
+        },"genre": "posts","keywords": "Archlinux","wordcount":  1243 ,
+        "url": "https:\/\/dream7180.github.io\/2023\/linux-archlinux-installation\/","datePublished": "2023-02-19T00:00:00+00:00","dateModified": "2023-02-19T00:00:00+00:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "dreamawake"},"author": {
+                "@type": "Person",
+                "name": "dreamawake"
+            },"description": "Archlinux 的安装指引：nvme + uefi 引导"
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="洼泥 - [foobox 博客]"><span class="header-title-pre"><i class='fa-solid fa-compact-disc'></i></span>洼泥</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 所有文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/about/"> 关于 </a><a class="menu-item" href="https://gitee.com/dream7180" rel="noopener noreffer" target="_blank"><i class='fa-solid fa-code-branch' aria-hidden='true'></i>  </a><a class="menu-item" href="https://github.com/dream7180" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="洼泥 - [foobox 博客]"><span class="header-title-pre"><i class='fa-solid fa-compact-disc'></i></span>洼泥</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">所有文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/about/" title="">关于</a><a class="menu-item" href="https://gitee.com/dream7180" title="" rel="noopener noreffer" target="_blank"><i class='fa-solid fa-code-branch' aria-hidden='true'></i></a><a class="menu-item" href="https://github.com/dream7180" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+            
+        </div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Archlinux 的安装指引：nvme + uefi</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>dreamawake</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/linux/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>linux</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-02-19">2023-02-19</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 1243 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 3 分钟&nbsp;<span id="/2023/linux-archlinux-installation/" class="leancloud_visitors" data-flag-title="Archlinux 的安装指引：nvme &#43; uefi">
+                        <i class="far fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
+                    </span>&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-usb-启动安装">1 USB 启动安装</a></li>
+    <li><a href="#2-查看启动模式确定是否-uefi-方式">2 查看启动模式，确定是否 UEFI 方式</a></li>
+    <li><a href="#3-查看磁盘情况进行分区操作">3 查看磁盘情况，进行分区操作</a></li>
+    <li><a href="#4-更新系统时间">4 更新系统时间</a></li>
+    <li><a href="#5-使用北外的源">5 使用北外的源</a></li>
+    <li><a href="#6-安装必须的软件包">6 安装必须的软件包</a></li>
+    <li><a href="#7-生成-fstab-文件">7 生成 fstab 文件</a></li>
+    <li><a href="#8-进入新系统进行配置">8 进入新系统进行配置</a></li>
+    <li><a href="#9-设置时区">9 设置时区</a></li>
+    <li><a href="#10-编辑-localegen-去注释">10 编辑 locale.gen, 去注释</a></li>
+    <li><a href="#11-网络">11 网络</a></li>
+    <li><a href="#12-设置root密码">12 设置root密码</a></li>
+    <li><a href="#13-systemd-boot启动器">13 systemd-boot启动器</a></li>
+    <li><a href="#14-安装完成-退出并重启电脑">14 安装完成! 退出并重启电脑</a></li>
+    <li><a href="#15-启动故障修复">15 启动故障修复</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p><figure><a class="lightgallery" href="/2023/linux-archlinux-installation/archlinux-install.jpg" title="安装界面" data-thumbnail="/2023/linux-archlinux-installation/archlinux-install.jpg" data-sub-html="<h2>安装界面</h2><p>安装界面</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/2023/linux-archlinux-installation/archlinux-install.jpg"
+            data-srcset="/2023/linux-archlinux-installation/archlinux-install.jpg, /2023/linux-archlinux-installation/archlinux-install.jpg 1.5x, /2023/linux-archlinux-installation/archlinux-install.jpg 2x"
+            data-sizes="auto"
+            alt="/2023/linux-archlinux-installation/archlinux-install.jpg" width="1150" height="706" />
+    </a><figcaption class="image-caption">安装界面</figcaption>
+    </figure>
+Archlinux 由于没有图像安装方式，让很多人望而止步。其实她的安装步骤和其他发行版并没有什么区别，只是没有封装的图形交互界面，冷冷的命令行仿佛在劝告没有基础的人别去碰她。我的建议是越早使用 archlinux 越好，不怕开始的困难，迈过以后或许你会发现这根本就不算困难，她的 KISS 理念，滚动升级以及优秀的包管理，让你更好地掌控你的系统，有点一劳永逸的味道，绝对值得你去尝试和学习。
+本文将大致介绍 archlinux 的安装过程，我安装的时间时是2022年，还是比较新的，何况有问题找 Wiki，<a href="https://wiki.archlinux.org/" target="_blank" rel="noopener noreffer ">Archlinux Wiki</a> 的不是一般的强大，而是无敌的存在。</p>
+<h2 id="1-usb-启动安装">1 USB 启动安装</h2>
+<p>从官网下载最新的 ISO 镜像，写入U盘作为安装启动介质。<br>
+在 linux 下用 DD，cat，cp，tee，pv 等命令都可以，如常用的 dd：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ dd <span class="nv">bs</span><span class="o">=</span>4M <span class="k">if</span><span class="o">=</span>path/to/archlinux-version-x86_64.iso <span class="nv">of</span><span class="o">=</span>/dev/sdx <span class="nv">conv</span><span class="o">=</span>fsync <span class="nv">oflag</span><span class="o">=</span>direct <span class="nv">status</span><span class="o">=</span>progress
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>在 Windows 下可以用 win32diskimager，USBwriter，USBImager，Rufus 等工具，非常简单。<br>
+制作完成后重启从 USB 启动进入安装，当然，出现的是命令行。</p>
+<h2 id="2-查看启动模式确定是否-uefi-方式">2 查看启动模式，确定是否 UEFI 方式</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ ls /sys/firmware/efi/efivars
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="3-查看磁盘情况进行分区操作">3 查看磁盘情况，进行分区操作</h2>
+<p>创建 linux 分区，如不存在，先不需要格式化。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ cfdisk /dev/nvme0n1
+</span></span><span class="line"><span class="cl">$ cfdisk /dev/sdc
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>本例中的硬盘分区使用情况如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-perl" data-lang="perl"><span class="line"><span class="cl"><span class="sr">/dev/</span><span class="n">nvme0n1p1</span>  <span class="c1"># 预先分好的 ESP 分区</span>
+</span></span><span class="line"><span class="cl"><span class="sr">/dev/</span><span class="n">nvme0n1p2</span>  <span class="c1"># Archlinux 根分区 /</span>
+</span></span><span class="line"><span class="cl"><span class="sr">/dev/s</span><span class="n">dc3</span>  <span class="c1"># 将会挂载为 /home</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>布局硬盘</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># NVME+systemd-boot方式 （systemd-boot需要把ESP永久mount到/boot上）</span>
+</span></span><span class="line"><span class="cl">$ mkfs.ext4 /dev/nvme0n1p2
+</span></span><span class="line"><span class="cl">$ mount /dev/nvme0n1p2 /mnt
+</span></span><span class="line"><span class="cl">mkdir /mnt/boot
+</span></span><span class="line"><span class="cl">mount /dev/nvme0n1p1 /mnt/boot
+</span></span><span class="line"><span class="cl">$ mkdir /mnt/home
+</span></span><span class="line"><span class="cl">$ mount /dev/sdc3 /mnt/home
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>如需开swap（内存足够不推荐 swap）:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ mkswap /dev/sdxx
+</span></span><span class="line"><span class="cl">$ swapon /dev/sdxx
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="4-更新系统时间">4 更新系统时间</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ timedatectl set-ntp <span class="nb">true</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="5-使用北外的源">5 使用北外的源</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-inf" data-lang="inf"><span class="line"><span class="cl"><span class="c1"># /etc/pacman.d/mirrorlist</span>
+</span></span><span class="line"><span class="cl"><span class="na">Server</span> <span class="o">=</span> <span class="s">https://mirrors.bfsu.edu.cn/archlinux/$repo/os/$arch</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="6-安装必须的软件包">6 安装必须的软件包</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ pacman -Syy
+</span></span><span class="line"><span class="cl">$ pacstrap -i /mnt base linux linux-firmware base-devel
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="7-生成-fstab-文件">7 生成 fstab 文件</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ genfstab -U -p /mnt &gt;&gt; /mnt/etc/fstab
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="8-进入新系统进行配置">8 进入新系统进行配置</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ arch-chroot /mnt
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="9-设置时区">9 设置时区</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ timedatectl set-timezone Asia/Shanghai
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>写入hwclock</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ hwclock -w --localtime
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="10-编辑-localegen-去注释">10 编辑 locale.gen, 去注释</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-inf" data-lang="inf"><span class="line"><span class="cl"><span class="c1"># /etc/locale.gen</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="na">en_US.UTF-8 UTF-8</span>
+</span></span><span class="line"><span class="cl"><span class="na">zh_CN.UTF-8 UTF-8</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>运行</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ locale-gen
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>把 locale 配置写入 locale.conf</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ <span class="nb">echo</span> <span class="nv">LANG</span><span class="o">=</span>en_US.UTF-8 &gt; /etc/locale.conf
+</span></span><span class="line"><span class="cl">$ <span class="nb">echo</span> <span class="nv">LC_CTYPE</span><span class="o">=</span>zh_CN.UTF-8 &gt;&gt; /etc/locale.conf
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="11-网络">11 网络</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ <span class="nb">echo</span> myhostname &gt; /etc/hostname
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>编辑 hosts</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-inf" data-lang="inf"><span class="line"><span class="cl"><span class="c1"># /etc/hosts</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="na">127.0.0.1 localhost localhost.localdomain localhost4 localhost4.localdomain4</span>
+</span></span><span class="line"><span class="cl"><span class="na">127.0.1.1 myhostname.localdomain myhostname</span>
+</span></span><span class="line"><span class="cl"><span class="na">::1 localhost localhost.localdomain localhost6 localhost6.localdomain6</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 如果绑定了 IP，如 192.168.1.6，可以添加</span>
+</span></span><span class="line"><span class="cl"><span class="na">192.168.1.6 myhostname</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>如果系统有一个永久的 IP 地址，请使用这个永久的 IP 地址而不是 127.0.1.1</p>
+<p><strong>启用网络 (方式一：使用原生的 systemd-networkd)</strong><br>
+查看网卡名称：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ ip -c a
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 在输出中找到 eno1 （本例）中的 altname enp0s31f6，即为配置中使用的网卡名称</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>编辑网络配置文件，更多请参考 <a href="https://wiki.archlinuxcn.org/wiki/Systemd-networkd?rdfrom=https%3A%2F%2Fwiki.archlinux.org%2Findex.php%3Ftitle%3DSystemd-networkd_%28%25E7%25AE%2580%25E4%25BD%2593%25E4%25B8%25AD%25E6%2596%2587%29%26redirect%3Dno" target="_blank" rel="noopener noreffer ">Archlinux Wiki</a></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-inf" data-lang="inf"><span class="line"><span class="cl"><span class="c1"># /etc/systemd/network/20-wired.network</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">[Match]</span>
+</span></span><span class="line"><span class="cl"><span class="na">Name</span><span class="o">=</span><span class="s">enp0s31f6</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">[Network]</span>
+</span></span><span class="line"><span class="cl"><span class="na">DHCP</span><span class="o">=</span><span class="s">yes</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ systemctl <span class="nb">enable</span> systemd-networkd.service
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>启用网络 (方式二：使用 networkmanager)</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ Pacman -S networkmanager
+</span></span><span class="line"><span class="cl">$ systemctl <span class="nb">enable</span> NetworkManager
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="12-设置root密码">12 设置root密码</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ passwd
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>可以一并添加用户</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ useradd -G root,users -m username
+</span></span><span class="line"><span class="cl">$ passwd username
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="13-systemd-boot启动器">13 systemd-boot启动器</h2>
+<p>我们前面已经挂载了ESP分区到/boot</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ bootctl --path<span class="o">=</span>/boot install
+</span></span><span class="line"><span class="cl">$ cat /usr/share/systemd/bootctl/arch.conf &gt; /boot/loader/entries/arch.conf
+</span></span><span class="line"><span class="cl">$ blkid /dev/nvme0n1p2 &gt;&gt; /boot/loader/entries/arch.conf
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>推荐使用 PARTUUID 来识别分区，修改 loader entry</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-inf" data-lang="inf"><span class="line"><span class="cl"><span class="c1"># /boot/loader/entries/arch.conf</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="na">options root</span><span class="o">=</span><span class="s">PARTUUID=xxxxx rw</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 要查看 PARTUUID，使用 blkid 命令</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>修改loader.conf</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-inf" data-lang="inf"><span class="line"><span class="cl"><span class="c1"># /boot/loader/loader.conf</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="na">default  arch.conf</span>
+</span></span><span class="line"><span class="cl"><span class="na">timeout  4</span>
+</span></span><span class="line"><span class="cl"><span class="na">console-mode max</span>
+</span></span><span class="line"><span class="cl"><span class="na">editor   no</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="14-安装完成-退出并重启电脑">14 安装完成! 退出并重启电脑</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ <span class="nb">exit</span>
+</span></span><span class="line"><span class="cl">$ umount -R /mnt
+</span></span><span class="line"><span class="cl">$ reboot
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="15-启动故障修复">15 启动故障修复</h2>
+<p>如果有启动有问题需要修复，可以 USB 启动后把已安装的系统先挂载再 arch-chroot，就可以进入已安装的系统进行修复工作了，如重新安装引导器等：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ mount /dev/nvme0n1p2 /mnt
+</span></span><span class="line"><span class="cl">$ arch-chroot /mnt
+</span></span></code></pre></td></tr></table>
+</div>
+</div></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2023-02-19</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/2023/linux-archlinux-installation/index.md" target="_blank">阅读原始文档</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/archlinux/">Archlinux</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/2023/foobar2000-green/" class="prev" rel="prev" title="foobar2000 绿色化工具"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>foobar2000 绿色化工具</a>
+            <a href="/2023/shutter/" class="next" rel="next" title="Shutter图像浏览器 (原ExifPro)，最新 1.4.1 版">Shutter图像浏览器 (原ExifPro)，最新 1.4.1 版<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.117.0">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2023 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">dreamawake</a></span>&nbsp;|&nbsp;<span class="license"><a href="https://www.github.com" target="_blank">github.com</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/valine/valine.min.css"><script type="text/javascript" src="/lib/valine/Valine.min.js"></script><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/algoliasearch/algoliasearch-lite.umd.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":50},"comment":{"valine":{"appId":"0GwACwpaGpxeZWkiO0a4WqVq-gzGzoHsz","appKey":"Bo283nDCAuxw7NeQ5irF2zJw","avatar":"mp","el":"#valine","emojiCDN":"https://cdn.staticfile.org/emoji-datasource-google/14.0.0/img/google/64/","emojiMaps":{"100":"1f4af.png","alien":"1f47d.png","anger":"1f4a2.png","angry":"1f620.png","anguished":"1f627.png","astonished":"1f632.png","black_heart":"1f5a4.png","blue_heart":"1f499.png","blush":"1f60a.png","bomb":"1f4a3.png","boom":"1f4a5.png","broken_heart":"1f494.png","brown_heart":"1f90e.png","clown_face":"1f921.png","cold_face":"1f976.png","cold_sweat":"1f630.png","confounded":"1f616.png","confused":"1f615.png","cry":"1f622.png","crying_cat_face":"1f63f.png","cupid":"1f498.png","dash":"1f4a8.png","disappointed":"1f61e.png","disappointed_relieved":"1f625.png","dizzy":"1f4ab.png","dizzy_face":"1f635.png","drooling_face":"1f924.png","exploding_head":"1f92f.png","expressionless":"1f611.png","face_vomiting":"1f92e.png","face_with_cowboy_hat":"1f920.png","face_with_hand_over_mouth":"1f92d.png","face_with_head_bandage":"1f915.png","face_with_monocle":"1f9d0.png","face_with_raised_eyebrow":"1f928.png","face_with_rolling_eyes":"1f644.png","face_with_symbols_on_mouth":"1f92c.png","face_with_thermometer":"1f912.png","fearful":"1f628.png","flushed":"1f633.png","frowning":"1f626.png","ghost":"1f47b.png","gift_heart":"1f49d.png","green_heart":"1f49a.png","grimacing":"1f62c.png","grin":"1f601.png","grinning":"1f600.png","hankey":"1f4a9.png","hear_no_evil":"1f649.png","heart":"2764-fe0f.png","heart_decoration":"1f49f.png","heart_eyes":"1f60d.png","heart_eyes_cat":"1f63b.png","heartbeat":"1f493.png","heartpulse":"1f497.png","heavy_heart_exclamation_mark_ornament":"2763-fe0f.png","hole":"1f573-fe0f.png","hot_face":"1f975.png","hugging_face":"1f917.png","hushed":"1f62f.png","imp":"1f47f.png","innocent":"1f607.png","japanese_goblin":"1f47a.png","japanese_ogre":"1f479.png","joy":"1f602.png","joy_cat":"1f639.png","kiss":"1f48b.png","kissing":"1f617.png","kissing_cat":"1f63d.png","kissing_closed_eyes":"1f61a.png","kissing_heart":"1f618.png","kissing_smiling_eyes":"1f619.png","laughing":"1f606.png","left_speech_bubble":"1f5e8-fe0f.png","love_letter":"1f48c.png","lying_face":"1f925.png","mask":"1f637.png","money_mouth_face":"1f911.png","nauseated_face":"1f922.png","nerd_face":"1f913.png","neutral_face":"1f610.png","no_mouth":"1f636.png","open_mouth":"1f62e.png","orange_heart":"1f9e1.png","partying_face":"1f973.png","pensive":"1f614.png","persevere":"1f623.png","pleading_face":"1f97a.png","pouting_cat":"1f63e.png","purple_heart":"1f49c.png","rage":"1f621.png","relaxed":"263a-fe0f.png","relieved":"1f60c.png","revolving_hearts":"1f49e.png","right_anger_bubble":"1f5ef-fe0f.png","robot_face":"1f916.png","rolling_on_the_floor_laughing":"1f923.png","scream":"1f631.png","scream_cat":"1f640.png","see_no_evil":"1f648.png","shushing_face":"1f92b.png","skull":"1f480.png","skull_and_crossbones":"2620-fe0f.png","sleeping":"1f634.png","sleepy":"1f62a.png","slightly_frowning_face":"1f641.png","slightly_smiling_face":"1f642.png","smile":"1f604.png","smile_cat":"1f638.png","smiley":"1f603.png","smiley_cat":"1f63a.png","smiling_face_with_3_hearts":"1f970.png","smiling_imp":"1f608.png","smirk":"1f60f.png","smirk_cat":"1f63c.png","sneezing_face":"1f927.png","sob":"1f62d.png","space_invader":"1f47e.png","sparkling_heart":"1f496.png","speak_no_evil":"1f64a.png","speech_balloon":"1f4ac.png","star-struck":"1f929.png","stuck_out_tongue":"1f61b.png","stuck_out_tongue_closed_eyes":"1f61d.png","stuck_out_tongue_winking_eye":"1f61c.png","sunglasses":"1f60e.png","sweat":"1f613.png","sweat_drops":"1f4a6.png","sweat_smile":"1f605.png","thinking_face":"1f914.png","thought_balloon":"1f4ad.png","tired_face":"1f62b.png","triumph":"1f624.png","two_hearts":"1f495.png","unamused":"1f612.png","upside_down_face":"1f643.png","weary":"1f629.png","white_frowning_face":"2639-fe0f.png","white_heart":"1f90d.png","wink":"1f609.png","woozy_face":"1f974.png","worried":"1f61f.png","yawning_face":"1f971.png","yellow_heart":"1f49b.png","yum":"1f60b.png","zany_face":"1f92a.png","zipper_mouth_face":"1f910.png","zzz":"1f4a4.png"},"enableQQ":false,"highlight":true,"lang":"zh-CN","pageSize":10,"placeholder":"你的评论 ...","recordIP":true,"serverURLs":"https://0gwacwpa.lc-cn-n1-shared.com","visitor":true}},"search":{"algoliaAppID":"476BSIE3J0","algoliaIndex":"wani-github","algoliaSearchKey":"28224d957fdb472b9316c96b752e0f40","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>
