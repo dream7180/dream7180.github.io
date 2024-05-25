@@ -28,22 +28,6 @@
     <description><![CDATA[文字输入框 foobox 界面中的文字输入框，如播放列表重命名等，需要回车才能生效，重要的事情说三遍：回车，回车！ 屏幕搜索 foobox 的主要面板支持直接键盘输入即时]]></description>
 </item>
 <item>
-    <title>foobar2000 绿色化工具</title>
-    <link>https://dream7180.github.io/2023/foobar2000-green/</link>
-    <pubDate>Sat, 18 Mar 2023 00:00:00 &#43;0000</pubDate>
-    <author>dreamawake</author>
-    <guid>https://dream7180.github.io/2023/foobar2000-green/</guid>
-    <description><![CDATA[foobar2000 绿色化工具，适用于绿色或便携包的 foobar2000，可注册和反注册相关组件，创建和删除桌面快捷方式。]]></description>
-</item>
-<item>
-    <title>foobox 图标包 for foobar2000</title>
-    <link>https://dream7180.github.io/2023/foobox-icons/</link>
-    <pubDate>Sat, 18 Mar 2023 00:00:00 &#43;0000</pubDate>
-    <author>dreamawake</author>
-    <guid>https://dream7180.github.io/2023/foobox-icons/</guid>
-    <description><![CDATA[制作精良的 foobox 图标包，喜欢的可以下载并替换 foobar2000 自带的关联图标。]]></description>
-</item>
-<item>
     <title>foobox 电台列表的 logo 封面显示</title>
     <link>https://dream7180.github.io/2023/foobar2000-radio-logo/</link>
     <pubDate>Sat, 18 Mar 2023 00:00:00 &#43;0000</pubDate>
@@ -52,7 +36,7 @@
     <description><![CDATA[foobox 电台列表的 logo 封面显示]]></description>
 </item>
 <item>
-    <title>qaac 2.80 编码器包 (整合CoreAudioToolbox，免itunes)</title>
+    <title>qaac 2.82 编码器包 (整合CoreAudioToolbox，免itunes)</title>
     <link>https://dream7180.github.io/2023/foobar2000-qaacenc/</link>
     <pubDate>Sat, 18 Mar 2023 00:00:00 &#43;0000</pubDate>
     <author>dreamawake</author>

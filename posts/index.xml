@@ -44,14 +44,6 @@
     <description><![CDATA[Archlinux 由于没有图像安装方式，让很多人望而止步。其实她的安装步骤和其他发行版并没有什么区别，只是没有封装的图形交互界面，冷冷的命令行仿佛在劝告没有基础的人别去碰她。我的建议是越早使用 archlinux 越好，不怕开始的困难，迈过以后或许你会发现这根本就不算困难。]]></description>
 </item>
 <item>
-    <title>foobar2000 绿色化工具</title>
-    <link>https://dream7180.github.io/2023/foobar2000-green/</link>
-    <pubDate>Sat, 18 Mar 2023 00:00:00 &#43;0000</pubDate>
-    <author>dreamawake</author>
-    <guid>https://dream7180.github.io/2023/foobar2000-green/</guid>
-    <description><![CDATA[foobar2000 绿色化工具，适用于绿色或便携包的 foobar2000，可注册和反注册相关组件，创建和删除桌面快捷方式。]]></description>
-</item>
-<item>
     <title>foobox 电台列表的 logo 封面显示</title>
     <link>https://dream7180.github.io/2023/foobar2000-radio-logo/</link>
     <pubDate>Sat, 18 Mar 2023 00:00:00 &#43;0000</pubDate>
@@ -60,15 +52,7 @@
     <description><![CDATA[foobox 电台列表的 logo 封面显示]]></description>
 </item>
 <item>
-    <title>foobox 图标包 for foobar2000</title>
-    <link>https://dream7180.github.io/2023/foobox-icons/</link>
-    <pubDate>Sat, 18 Mar 2023 00:00:00 &#43;0000</pubDate>
-    <author>dreamawake</author>
-    <guid>https://dream7180.github.io/2023/foobox-icons/</guid>
-    <description><![CDATA[制作精良的 foobox 图标包，喜欢的可以下载并替换 foobar2000 自带的关联图标。]]></description>
-</item>
-<item>
-    <title>qaac 2.80 编码器包 (整合CoreAudioToolbox，免itunes)</title>
+    <title>qaac 2.82 编码器包 (整合CoreAudioToolbox，免itunes)</title>
     <link>https://dream7180.github.io/2023/foobar2000-qaacenc/</link>
     <pubDate>Sat, 18 Mar 2023 00:00:00 &#43;0000</pubDate>
     <author>dreamawake</author>
