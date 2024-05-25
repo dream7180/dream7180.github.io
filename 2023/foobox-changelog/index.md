@@ -1,9 +1,13 @@
 # foobox 更新日志
 
 <img src="changelog.png" width="325">
-{{< admonition success "2024-5-25, 7.27版 + 6.27重制版" >}}
-* 优化播放列表视图，修正上次更新发现的一些 bug。
-* 博客转移到 https://dream7180.github.io。 
+{{< admonition success "2024-5-26, 7.27版 + 6.27重制版" >}}
+* 优化播放列表视图，比如改变面板大小等操作不会再回到列表的焦点曲目。
+* 紧急修正上次更新后发现的一些 bug。  
+
+公告一下：博客转移到 https://dream7180.github.io 了。 
+
+foobox-video 没有更新，如需要安装可在 7.26版 + 6.26重制版的发布页面下载。
 {{< /admonition >}}
 {{< admonition example "2024-5-18, 7.26版 + 6.26重制版" >}}
 * 右栏小播放列表视图完全重写。

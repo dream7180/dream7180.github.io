@@ -17,7 +17,7 @@
     <pubDate>Wed, 15 Mar 2023 00:00:00 &#43;0000</pubDate>
     <author>dreamawake</author>
     <guid>https://dream7180.github.io/2023/foobox-changelog/</guid>
-    <description><![CDATA[2024-5-25, 7.27版 &#43; 6.27重制版 优化播放列表视图，修正上次更新发现的一些 bug。 博客转移到 https://dream7180.github.io]]></description>
+    <description><![CDATA[2024-5-26, 7.27版 &#43; 6.27重制版 优化播放列表视图，比如改变面板大小等操作不会再回到列表的焦点曲目。 紧急修正上次更新后发现的一些 bug。 公告一下：]]></description>
 </item>
 <item>
     <title>foobar2000 和 foobox 帮助与技巧</title>
