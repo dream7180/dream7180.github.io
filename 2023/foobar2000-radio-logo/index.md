@@ -9,7 +9,7 @@
 \
 \
 **【使用方法】**  
-如图所示，在 foobar2000 参数选项的封面显示里添加两行
+如图所示，在 foobar2000 参数选项的封面显示里添加两行（封面，碟片或其他栏目都可以）
 
 ```
  [logo文件夹路径\%title%.jpg]
@@ -17,7 +17,7 @@
 ```
 <img src="settings.png" width="863">
  
-**【电台 logo 包收录于 foobox-icons 仓库】**  
-[https://github.com/dream7180/foobox-icons](https://github.com/dream7180/foobox-icons) \
-[https://gitee.com/dream7180/foobox-icons](https://gitee.com/dream7180/foobox-icons)
+**【电台 logo 包收录于 Resource 仓库】**  
+[https://github.com/dream7180/Resource](https://github.com/dream7180/Resource) \
+[https://gitee.com/dream7180/Resource](https://gitee.com/dream7180/Resource)
 
