@@ -1,4 +1,4 @@
-# foobox 7.28 (x64)，6.28 重制版 (x86), foobar2000 皮肤配置 (DUI)
+# foobox 7.29 (含 foobox 6 重制版), foobar2000 皮肤配置 (DUI)
 
 foobox 是一个 [foobar2000](http://www.foobar2000.org/) 默认用户界面 (DUI) 的皮肤配置，具有简洁而美观实用的特点，善于管理曲目数量大的媒体库 ，对音乐各种封面提供丰富的支持。
 \
@@ -28,7 +28,7 @@ foobox 中文版适用于 foobar2000 汉化版 by [Asion](https://www.cnblogs.co
 > **【安装包】**
 
 * 到上面的 Github 或 Gitee 项目主页 Releases (发行版) 页面下载最新的安装包，请确保您的系统已安装了 foobar2000 汉化版。  
-* 从 7.26 版开始增加 foobox 6 重制版，foobox 7 专注 64 位版，foobox 6 重制版为 32 位版，其实是在 foobox 7 的基础上添加 UI Hacks 并整合了两个版本的特点，适合喜欢隐藏菜单栏状态栏 UI 的朋友。
+* 从 7.26 版开始增加 foobox 6 重制版 (仅 32 位)，其实是在 foobox 7 的基础上添加 UI Hacks 并整合了两个版本的特点，适合喜欢隐藏菜单栏状态栏 UI 的朋友。
 <!--* 感谢[南陇居士](https://www.nljs.site/)制作的整合安装包: [https://www.nljs.site/foobar2000.html](https://www.nljs.site/foobar2000.html)
 
 > **【手动安装】**

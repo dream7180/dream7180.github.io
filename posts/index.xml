@@ -4,7 +4,7 @@
         <link>https://dream7180.github.io/posts/</link>
         <description>所有文章 | 洼泥 - [foobox 博客]</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 18 Mar 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://dream7180.github.io/posts/" rel="self" type="application/rss+xml" /><item>
-    <title>foobox 7.28 (x64)，6.28 重制版 (x86), foobar2000 皮肤配置 (DUI)</title>
+    <title>foobox 7.29 (含 foobox 6 重制版), foobar2000 皮肤配置 (DUI)</title>
     <link>https://dream7180.github.io/2023/foobox-release/</link>
     <pubDate>Wed, 15 Mar 2023 00:00:00 &#43;0000</pubDate>
     <author>dreamawake</author>
@@ -17,7 +17,7 @@
     <pubDate>Wed, 15 Mar 2023 00:00:00 &#43;0000</pubDate>
     <author>dreamawake</author>
     <guid>https://dream7180.github.io/2023/foobox-changelog/</guid>
-    <description><![CDATA[2024-5-29, 7.28版 &#43; 6.28重制版 紧急修正一些 bug，优化播放列表视图。 更新电台列表地址，请在 foobox 设置里重置电台地址。 右栏封面及歌曲信息面板右键菜单]]></description>
+    <description><![CDATA[2024-6-29, 7.29版 封面浏览面板添加紧凑排列显示模式，并设为默认。 歌词 ESLyric 位置添加音轨属性面板，未播放时显示歌曲属性，播放时自动切换为歌词，手动切换是]]></description>
 </item>
 <item>
     <title>foobar2000 和 foobox 帮助与技巧</title>
