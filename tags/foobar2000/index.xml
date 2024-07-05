@@ -4,7 +4,7 @@
         <link>https://dream7180.github.io/tags/foobar2000/</link>
         <description>foobar2000 - 标签 - 洼泥 - [foobox 博客]</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 18 Mar 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://dream7180.github.io/tags/foobar2000/" rel="self" type="application/rss+xml" /><item>
-    <title>foobox 7.29 (含 foobox 6 重制版), foobar2000 皮肤配置 (DUI)</title>
+    <title>foobox 7.30 (含 foobox 6 重制版), foobar2000 皮肤配置 (DUI)</title>
     <link>https://dream7180.github.io/2023/foobox-release/</link>
     <pubDate>Wed, 15 Mar 2023 00:00:00 &#43;0000</pubDate>
     <author>dreamawake</author>
@@ -17,7 +17,7 @@
     <pubDate>Wed, 15 Mar 2023 00:00:00 &#43;0000</pubDate>
     <author>dreamawake</author>
     <guid>https://dream7180.github.io/2023/foobox-changelog/</guid>
-    <description><![CDATA[2024-6-29, 7.29版 封面浏览面板添加紧凑排列显示模式，并设为默认。 歌词 ESLyric 位置添加音轨属性面板，未播放时显示歌曲属性，播放时自动切换为歌词，手动切换是]]></description>
+    <description><![CDATA[2024-7-05, 7.30版 UI: 细节及配色优化，尤其播放列表视图面板及深色布局。 UI: 6 重制版背景色变色更鲜明。再提醒一下，白色背景时背景色不会随封面变色。 修正已]]></description>
 </item>
 <item>
     <title>foobar2000 和 foobox 帮助与技巧</title>
