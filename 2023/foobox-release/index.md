@@ -1,4 +1,4 @@
-# foobox 7.30 (含 foobox 6 重制版), foobar2000 皮肤配置 (DUI)
+# foobox 7.31 (含 foobox 6 重制版), foobar2000 皮肤配置 (DUI)
 
 foobox 是一个 [foobar2000](http://www.foobar2000.org/) 默认用户界面 (DUI) 的皮肤配置，具有简洁而美观实用的特点，善于管理曲目数量大的媒体库 ，对音乐各种封面提供丰富的支持。
 \
