@@ -4,7 +4,7 @@
         <link>https://dream7180.github.io/categories/foobar2000/</link>
         <description>foobar2000 - 分类 - 洼泥 - [foobox 博客]</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 18 Mar 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://dream7180.github.io/categories/foobar2000/" rel="self" type="application/rss+xml" /><item>
-    <title>foobox 7.31 (含 foobox 6 重制版), foobar2000 皮肤配置 (DUI)</title>
+    <title>foobox 7.32 (含 foobox 6 重制版), foobar2000 皮肤配置 (DUI)</title>
     <link>https://dream7180.github.io/2023/foobox-release/</link>
     <pubDate>Wed, 15 Mar 2023 00:00:00 &#43;0000</pubDate>
     <author>dreamawake</author>
@@ -17,7 +17,7 @@
     <pubDate>Wed, 15 Mar 2023 00:00:00 &#43;0000</pubDate>
     <author>dreamawake</author>
     <guid>https://dream7180.github.io/2023/foobox-changelog/</guid>
-    <description><![CDATA[2024-7-24, 7.31版 播放列表管理器可以多选操作播放列表 (Shift, Control 或 Control+A)。 电台地址修正 (由于 gh 加速的失效需更换)。 为避免出错，电台地址和音频]]></description>
+    <description><![CDATA[2024-8-17, 7.32版 修正已知 bug, 如极限缩小界面某些面板崩溃；不移动鼠标时播放控制按钮不能连续点击等。 其他的优化。 所需组件升级。 2024-7-24, 7.31版 播放列表管理]]></description>
 </item>
 <item>
     <title>foobar2000 和 foobox 帮助与技巧</title>
