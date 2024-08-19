@@ -1,10 +1,10 @@
 # foobox 更新日志
 
 <img src="changelog.png" width="325">
-{{< admonition success "2024-8-17, 7.32版" >}}
-* 修正已知 bug, 如极限缩小界面某些面板崩溃；不移动鼠标时播放控制按钮不能连续点击等。
-* 其他的优化。
-* 所需组件升级。
+{{< admonition success "2024-8-20, 7.32版" >}}
+* 修正一些 UI 的 bugs。
+* 修正播放控制按钮不移动鼠标时不能连续点击的问题。
+* 其他优化及所需组件升级。
 {{< /admonition >}}
 {{< admonition example "2024-7-24, 7.31版" >}}
 * 播放列表管理器可以多选操作播放列表 (Shift, Control 或 Control+A)。
