@@ -1,4 +1,4 @@
-# foobox 7.32 (含 foobox 6 重制版), foobar2000 皮肤配置 (DUI)
+# foobox 7.33 (含 foobox 6 重制版), foobar2000 皮肤配置 (DUI)
 
 foobox 是一个 [foobar2000](http://www.foobar2000.org/) 默认用户界面 (DUI) 的皮肤配置，具有简洁而美观实用的特点，善于管理曲目数量大的媒体库 ，对音乐各种封面提供丰富的支持。
 \
@@ -19,8 +19,8 @@ foobox 中文版适用于 foobar2000 汉化版 by [Asion](https://www.cnblogs.co
 * 播放列表管理器，播放列表，封面浏览原作者 br3tt，汉化 always_beta;  
 * 封面面板原作者 Jensen;  
 * 搜索框原作者 [Asion](https://www.cnblogs.com/asionwu);  
-* [简介面板](https://github.com/Wil-B/Biography)作者 Wil-B;
-* 网络电台列表维护 [范明明](https://github.com/fanmingming);  
+* [简介面板](https://github.com/Wil-B/Biography)作者 Wil-B;  
+* 网络电台列表收集自 [范明明](https://github.com/fanmingming)、[Kimentanm](https://github.com/Kimentanm).  
 
 感谢 fb2k 折腾群的好友对 foobox 的编写提供众多支持， Asion, Elia, always beta, ttsping, 南陇居士(Nanlon), 添加硬件, 唐人清风, BTX, Asooo, Jensen, 庆军等。
 感谢所有使用和支持 foobox 的网友。 
