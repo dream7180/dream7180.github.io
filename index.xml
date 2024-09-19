@@ -6,7 +6,7 @@
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 18 Mar 2023 00:00:00 &#43;0000</lastBuildDate>
             <atom:link href="https://dream7180.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
-    <title>foobox 7.33 (含 foobox 6 重制版), foobar2000 皮肤配置 (DUI)</title>
+    <title>foobox 7.34 (含 foobox 6 重制版), foobar2000 皮肤配置 (DUI)</title>
     <link>https://dream7180.github.io/2023/foobox-release/</link>
     <pubDate>Wed, 15 Mar 2023 00:00:00 &#43;0000</pubDate>
     <author>dreamawake</author>
@@ -19,7 +19,7 @@
     <pubDate>Wed, 15 Mar 2023 00:00:00 &#43;0000</pubDate>
     <author>dreamawake</author>
     <guid>https://dream7180.github.io/2023/foobox-changelog/</guid>
-    <description><![CDATA[2024-9-05, 7.33版 修正播放列表管理器添加网络电台列表菜单有可能读取不到配置列表的问题。 网络电台列表已经整合成一个预置列表 (不能在配置里删除)，fo]]></description>
+    <description><![CDATA[2024-9-19, 7.34版 重命名等输入框不再需要回车确认生效。 不再默认创建播放队列播放列表，可以在 foobox 设置 - 播放列表视图里设置，右键显示播放队列仍然保留。 修]]></description>
 </item>
 <item>
     <title>foobar2000 和 foobox 帮助与技巧</title>
@@ -27,7 +27,7 @@
     <pubDate>Wed, 15 Mar 2023 00:00:00 &#43;0000</pubDate>
     <author>dreamawake</author>
     <guid>https://dream7180.github.io/2023/foobox-tips/</guid>
-    <description><![CDATA[文字输入框 foobox 界面中的文字输入框，如播放列表重命名等，需要回车才能生效，重要的事情说三遍：回车，回车！ 屏幕搜索 foobox 的主要面板支持直接键盘输入即时]]></description>
+    <description><![CDATA[文字输入框 [7.33 及以下的版本] foobox 界面中的文字输入框，如播放列表重命名等，需要回车才能生效【7.34 版开始已经不需要回车确认了】！ 屏幕搜索 foobox 的主要]]></description>
 </item>
 <item>
     <title>Shutter图像浏览器 (原ExifPro)，最新 1.4.1 版</title>
