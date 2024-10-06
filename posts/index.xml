@@ -4,7 +4,7 @@
         <link>https://dream7180.github.io/posts/</link>
         <description>所有文章 | 洼泥 - [foobox 博客]</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 18 Mar 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://dream7180.github.io/posts/" rel="self" type="application/rss+xml" /><item>
-    <title>foobox 7.34 (含 foobox 6 重制版), foobar2000 皮肤配置 (DUI)</title>
+    <title>foobox 7.35 (含 foobox 6 重制版), foobar2000 皮肤配置 (DUI)</title>
     <link>https://dream7180.github.io/2023/foobox-release/</link>
     <pubDate>Wed, 15 Mar 2023 00:00:00 &#43;0000</pubDate>
     <author>dreamawake</author>
@@ -17,7 +17,7 @@
     <pubDate>Wed, 15 Mar 2023 00:00:00 &#43;0000</pubDate>
     <author>dreamawake</author>
     <guid>https://dream7180.github.io/2023/foobox-changelog/</guid>
-    <description><![CDATA[2024-9-19, 7.34版 重命名等输入框不再需要回车确认生效。 不再默认创建播放队列播放列表，可以在 foobox 设置 - 播放列表视图里设置，右键显示播放队列仍然保留。 修]]></description>
+    <description><![CDATA[2024-10-06, 7.35版 修正了播放列表视图自 7.15 版产生的重要 bug，并优化加速了播放列表视图里的封面显示。 稍微减小列表行高，并在 foobox 设置 -&gt; 播放列表视图里添加]]></description>
 </item>
 <item>
     <title>foobar2000 和 foobox 帮助与技巧</title>
