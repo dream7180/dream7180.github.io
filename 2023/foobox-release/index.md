@@ -1,6 +1,6 @@
-# foobox 7.37 (含 foobox 6 重制版), foobar2000 皮肤配置 (DUI)
+# foobox 7.38 (含 foobox 6 重制版), foobar2000 皮肤配置 (DUI)
 
-foobox 是一个 [foobar2000](http://www.foobar2000.org/) 默认用户界面 (DUI) 的皮肤配置，具有简洁而美观实用的特点，善于管理曲目数量大的媒体库 ，对音乐各种封面提供丰富的支持。
+foobox 是音频播放器 [foobar2000](http://www.foobar2000.org/) 的定制主题，基于默认用户界面 (DUI) 及 JSplitter (Spider Monkey Panel 版) 组件，支持最新的 foobar2000 for Windows 32 位及 64 位版，符合主流软件的审美，扩展功能丰富并保持软件的流畅运行。
 \
 \
 **[项目 GitHub 主页](https://github.com/dream7180/foobox-cn)** |  **[项目Gitee 主页](https://gitee.com/dream7180/foobox-cn)**
@@ -72,7 +72,7 @@ foobar2000 官方网站：[http://www.foobar2000.org](http://www.foobar2000.org/
 
 Aion 汉化版博客：[asionwu - 博客园 (cnblogs.com)](https://www.cnblogs.com/asionwu)
 
-智享阁汉化版：[esnpc.com](https://www.esnpc.com/)
+智享阁部分组件汉化：[esnpc.com](https://www.esnpc.com/)
 
 > **【界面截图】**  
 

@@ -6,12 +6,12 @@
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 18 Mar 2023 00:00:00 &#43;0000</lastBuildDate>
             <atom:link href="https://dream7180.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
-    <title>foobox 7.37 (含 foobox 6 重制版), foobar2000 皮肤配置 (DUI)</title>
+    <title>foobox 7.38 (含 foobox 6 重制版), foobar2000 皮肤配置 (DUI)</title>
     <link>https://dream7180.github.io/2023/foobox-release/</link>
     <pubDate>Wed, 15 Mar 2023 00:00:00 &#43;0000</pubDate>
     <author>dreamawake</author>
     <guid>https://dream7180.github.io/2023/foobox-release/</guid>
-    <description><![CDATA[foobox 是音乐播放器 <a href="http://www.foobar2000.org/" target="_blank" rel="noopener noreffer ">foobar2000</a> 默认用户界面 (DUI) 的皮肤配置，具有简洁而美观实用的特点，善于管理曲目数量大的媒体库 ，对音乐各种封面提供丰富的支持。]]></description>
+    <description><![CDATA[foobox 是音频播放器 foobar2000 的定制主题，基于默认用户界面 (DUI) 及 JSplitter 组件，支持最新的 foobar2000 for Windows 32 位及 64 位版，符合主流软件的审美，扩展功能丰富并保持软件的流畅运行。]]></description>
 </item>
 <item>
     <title>foobox 更新日志</title>
@@ -19,7 +19,7 @@
     <pubDate>Wed, 15 Mar 2023 00:00:00 &#43;0000</pubDate>
     <author>dreamawake</author>
     <guid>https://dream7180.github.io/2023/foobox-changelog/</guid>
-    <description><![CDATA[2024-11-11, 7.37版 6 重制版添加标题栏显示更多音轨信息的设置，在 foobox 设置里自定义。 右栏的信息封面面板右键菜单添加循环歌曲信息的开关，可以关闭文字循环，]]></description>
+    <description><![CDATA[2024-12-07, 7.38版 修正已知 bug，代码优化。 更新歌词组件 ESLyric v1.0.1.1，要求不低于 Win10 1607，系统低于要求时会安装旧版 ESLyric。 6重制版]]></description>
 </item>
 <item>
     <title>foobar2000 和 foobox 帮助与技巧</title>
@@ -54,7 +54,7 @@
     <description><![CDATA[foobox 电台列表的 logo 封面显示]]></description>
 </item>
 <item>
-    <title>qaac 2.82 编码器包 (整合CoreAudioToolbox，免itunes)</title>
+    <title>qaac 2.83 编码器包 (整合CoreAudioToolbox，免itunes)</title>
     <link>https://dream7180.github.io/2023/foobar2000-qaacenc/</link>
     <pubDate>Sat, 18 Mar 2023 00:00:00 &#43;0000</pubDate>
     <author>dreamawake</author>
