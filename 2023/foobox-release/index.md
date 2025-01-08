@@ -1,4 +1,4 @@
-# foobox 7.38 (含 foobox 6 重制版), foobar2000 皮肤配置 (DUI)
+# foobox 7.39 (含 foobox 6 重制版), foobar2000 皮肤配置 (DUI)
 
 foobox 是音频播放器 [foobar2000](http://www.foobar2000.org/) 的定制主题，基于默认用户界面 (DUI) 及 JSplitter (Spider Monkey Panel 版) 组件，支持最新的 foobar2000 for Windows 32 位及 64 位版，符合主流软件的审美，扩展功能丰富并保持软件的流畅运行。
 \
@@ -10,7 +10,7 @@ foobox 是音频播放器 [foobar2000](http://www.foobar2000.org/) 的定制主�
 
 > **【制作和感谢】**
 
-foobox 中文版适用于 foobar2000 汉化版 by [Asion](https://www.cnblogs.com/asionwu) 或[智享阁](https://www.esnpc.com/)，使用以下组件:  
+foobox 中文版适用于 foobar2000 汉化版 by [Asion](https://www.cnblogs.com/asionwu)，使用以下组件:  
 * ttsping 的歌词组件 [ESLyric](https://github.com/ESLyric/release);  
 * 基于 [Spider Monkey Panel](https://github.com/TheQwertiest/foo_spider_monkey_panel) 的 [JSplitter](https://foobar2000.ru/forum/viewtopic.php?t=6378);  
 * [foo_enhanced_spectrum_analyzer](https://hydrogenaud.io/index.php/topic,116014.0.html).  
