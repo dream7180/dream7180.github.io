@@ -1,4 +1,4 @@
-# foobox 7.39 (含 foobox 6 重制版), foobar2000 皮肤配置 (DUI)
+# foobox 7.40 (含 foobox 6 重制版), foobar2000 皮肤配置 (DUI)
 
 foobox 是音频播放器 [foobar2000](http://www.foobar2000.org/) 的定制主题，基于默认用户界面 (DUI) 及 JSplitter (Spider Monkey Panel 版) 组件，支持最新的 foobar2000 for Windows 32 位及 64 位版，符合主流软件的审美，扩展功能丰富并保持软件的流畅运行。
 \

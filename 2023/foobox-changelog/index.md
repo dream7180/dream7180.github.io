@@ -1,6 +1,11 @@
 # foobox 更新日志
 
 <img src="changelog.png" width="325">
+{{< admonition success "2025-1-26, 7.40版" >}}
+* 优化简化 Win7 相关的代码。
+* 安装包添加安装旧版 ESLyric (0.5.4.1028) 的选项。
+* 升级 ESLyric 到 1.0.1.6 (如果系统 >= Win10 1607)。   
+{{< /admonition >}}
 {{< admonition success "2025-1-08, 7.39版" >}}
 * 修正 UI 方面的小问题。
 * 更换播放列表管理器集成的电台列表的 gh 镜像加速地址。
