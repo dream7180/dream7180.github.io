@@ -1,6 +1,11 @@
 # foobox 更新日志
 
 <img src="changelog.png" width="325">
+{{< admonition success "2025-3-02, 7.41版" >}}
+* 优化封面取色，增加取样点增加精确度，感谢 @1078249029 的建议和 [PR](https://github.com/dream7180/foobox-cn/pull/332)。
+* foobox 设置里添加封面取色的阈值调整，值为 1-10，随数值增加而增加精确读，但会影响速度。
+* 升级 JSPlitter 和 ESLyric 组件到当前最新版。
+{{< /admonition >}}
 {{< admonition success "2025-1-26, 7.40版" >}}
 * 优化简化 Win7 相关的代码。
 * 安装包添加安装旧版 ESLyric (0.5.4.1028) 的选项。
