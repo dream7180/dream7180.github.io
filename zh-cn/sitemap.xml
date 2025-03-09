@@ -4,11 +4,11 @@
     ><url>
             <loc>https://dream7180.github.io/2023/foobox-release/</loc><lastmod>2023-03-15T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://dream7180.github.io/2023/foobox-changelog/</loc><lastmod>2023-03-15T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://dream7180.github.io/2025/openwrt-install/</loc><lastmod>2025-02-06T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
+            <loc>https://dream7180.github.io/2025/openwrt-install/</loc><lastmod>2025-02-06T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
             <loc>https://dream7180.github.io/2023/foobox-tips/</loc><lastmod>2023-03-15T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://dream7180.github.io/2023/shutter/</loc><lastmod>2023-03-15T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://dream7180.github.io/2023/linux-archlinux-installation/</loc><lastmod>2023-02-19T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://dream7180.github.io/categories/</loc><lastmod>2025-02-06T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority><xhtml:link
+            <loc>https://dream7180.github.io/categories/</loc><lastmod>2025-02-06T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="https://dream7180.github.io/en/categories/"
@@ -17,10 +17,10 @@
                     hreflang="zh-cn"
                     href="https://dream7180.github.io/categories/"
                     /></url><url>
-            <loc>https://dream7180.github.io/categories/linux/</loc><lastmod>2025-02-06T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
-            <loc>https://dream7180.github.io/tags/openwrt/</loc><lastmod>2025-02-06T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
-            <loc>https://dream7180.github.io/posts/</loc><lastmod>2025-02-06T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
-            <loc>https://dream7180.github.io/tags/</loc><lastmod>2025-02-06T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority><xhtml:link
+            <loc>https://dream7180.github.io/categories/linux/</loc><lastmod>2025-02-06T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
+            <loc>https://dream7180.github.io/tags/openwrt/</loc><lastmod>2025-02-06T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
+            <loc>https://dream7180.github.io/posts/</loc><lastmod>2025-02-06T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
+            <loc>https://dream7180.github.io/tags/</loc><lastmod>2025-02-06T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="https://dream7180.github.io/en/tags/"
@@ -29,7 +29,7 @@
                     hreflang="zh-cn"
                     href="https://dream7180.github.io/tags/"
                     /></url><url>
-            <loc>https://dream7180.github.io/</loc><lastmod>2025-02-06T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority><xhtml:link
+            <loc>https://dream7180.github.io/</loc><lastmod>2025-02-06T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="https://dream7180.github.io/en/"

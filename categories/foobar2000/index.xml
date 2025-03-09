@@ -4,7 +4,7 @@
         <link>https://dream7180.github.io/categories/foobar2000/</link>
         <description>foobar2000 - 分类 - 洼泥 - [foobox 博客]</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 18 Mar 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://dream7180.github.io/categories/foobar2000/" rel="self" type="application/rss+xml" /><item>
-    <title>foobox 7.41 (含 foobox 6 重制版), foobar2000 皮肤配置 (DUI)</title>
+    <title>foobox 7.42 (含 foobox 6 重制版), foobar2000 皮肤配置 (DUI)</title>
     <link>https://dream7180.github.io/2023/foobox-release/</link>
     <pubDate>Wed, 15 Mar 2023 00:00:00 &#43;0000</pubDate>
     <author>dreamawake</author>
@@ -17,7 +17,7 @@
     <pubDate>Wed, 15 Mar 2023 00:00:00 &#43;0000</pubDate>
     <author>dreamawake</author>
     <guid>https://dream7180.github.io/2023/foobox-changelog/</guid>
-    <description><![CDATA[2025-3-02, 7.41版 优化封面取色，增加取样点增加精确度，感谢 @1078249029 的建议和 PR。 foobox 设置里添加封面取色的阈值调整，值为 1-10，随数值增加而增加精确读，但]]></description>
+    <description><![CDATA[2025-3-09, 7.42版 由于新版 JSPlitter 不再支持 Windows 7，故用旧版 JSPlitter 制作了 7.42 Win7 专用版，理论上该版不再更新。 改变了播放列表管理器自带的电台列表的格式和源地址。 以下是]]></description>
 </item>
 <item>
     <title>foobar2000 和 foobox 帮助与技巧</title>
