@@ -1,6 +1,12 @@
 # foobox 更新日志
 
 <img src="changelog.png" width="325">
+{{< admonition success "2025-3-22, 7.43版" >}}
+* 修正了播放列表在文件夹及流派分组时无封面缓存时不能读取封面的问题 [#11](https://github.com/dream7180/foobox-en/issues/11).
+* 修正了拖入出错的媒体库歌曲时导致播放列表崩溃的问题.
+* 修正了删除播放列表提示在高 DPI 下显示不全的问题.
+* ESLyric 版本升级，其他小优化.
+{{< /admonition >}}
 {{< admonition success "2025-3-09, 7.42版" >}}
 * 由于新版 JSPlitter 不再支持 Windows 7，故用旧版 JSPlitter 制作了 7.42 Win7 专用版，理论上该版不再更新。
 * 改变了播放列表管理器自带的电台列表的格式和源地址。  
