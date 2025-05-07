@@ -1,13 +1,19 @@
 # foobox 更新日志
 
 <img src="changelog.png" width="325">
-{{< admonition success "2025-3-22, 7.43版" >}}
+{{< admonition success "2025-5-07, 8.0版" >}}
+* 32位不再区分 6 重制版，已并入 foobox 8，64位和32位界面风格一致，皆支持背景变色（可以在 foobox 设置里关闭它），但只有32位才有完整的变色效果(由于 UI_Hacks 没有64位)。
+* 优化跟随封面变色的准确度和运行效率。
+* 精简封面面板一些没必要的功能。
+* 优化音量条音量提示，并且鼠标滚轮操作也有提示。
+{{< /admonition >}}
+{{< admonition example "2025-3-22, 7.43版" >}}
 * 修正了播放列表在文件夹及流派分组时无封面缓存时不能读取封面的问题 [#11](https://github.com/dream7180/foobox-en/issues/11).
 * 修正了拖入出错的媒体库歌曲时导致播放列表崩溃的问题.
 * 修正了删除播放列表提示在高 DPI 下显示不全的问题.
 * ESLyric 版本升级，其他小优化.
 {{< /admonition >}}
-{{< admonition success "2025-3-09, 7.42版" >}}
+{{< admonition example "2025-3-09, 7.42版" >}}
 * 由于新版 JSPlitter 不再支持 Windows 7，故用旧版 JSPlitter 制作了 7.42 Win7 专用版，理论上该版不再更新。
 * 改变了播放列表管理器自带的电台列表的格式和源地址。  
 
@@ -16,27 +22,27 @@
 * foobox 设置里添加封面取色的阈值调整，值为 1-10，随数值增加而增加精确读，但会影响速度。
 * 升级 JSPlitter 和 ESLyric 组件到当前最新版 (Win7版除外)。
 {{< /admonition >}}
-{{< admonition success "2025-1-26, 7.40版" >}}
+{{< admonition example "2025-1-26, 7.40版" >}}
 * 优化简化 Win7 相关的代码。
 * 安装包添加安装旧版 ESLyric (0.5.4.1028) 的选项。
 * 升级 ESLyric 到 1.0.1.6 (如果系统 >= Win10 1607)。   
 {{< /admonition >}}
-{{< admonition success "2025-1-08, 7.39版" >}}
+{{< admonition example "2025-1-08, 7.39版" >}}
 * 修正 UI 方面的小问题。
 * 更换播放列表管理器集成的电台列表的 gh 镜像加速地址。
 * 升级 ESLyric 到 1.0.1.3 (如果系统 >= Win10 1607)。   
 {{< /admonition >}}
-{{< admonition success "2024-12-07, 7.38版" >}}
+{{< admonition example "2024-12-07, 7.38版" >}}
 * 修正已知 bug，代码优化。
 * 更新歌词组件 ESLyric v1.0.1.1，要求不低于 Win10 1607，系统低于要求时会安装旧版 ESLyric。
 * 6重制版：foobox设置中的标题栏显示更多音轨信息，添加设置为推荐值的按钮。    
 {{< /admonition >}}
-{{< admonition success "2024-11-11, 7.37版" >}}
+{{< admonition example "2024-11-11, 7.37版" >}}
 * 6 重制版添加标题栏显示更多音轨信息的设置，在 foobox 设置里自定义。  
 * 右栏的信息封面面板右键菜单添加循环歌曲信息的开关，可以关闭文字循环，不显示编码等信息。  
 * 修正已知 bug 及代码优化，自带的电台列表添加一个代理地址。    
 {{< /admonition >}}
-{{< admonition success "2024-10-11, 7.36版" >}}
+{{< admonition example "2024-10-11, 7.36版" >}}
 * 优化封面浏览面板加载封面缓存的性能和资源占用。  
 * 播放列表视图封面加入封面缓存预读取机制，无感加载显示更顺畅。  
 提示:  
