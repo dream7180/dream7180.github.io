@@ -4,7 +4,7 @@
         <link>https://dream7180.github.io/tags/foobox/</link>
         <description>foobox - 标签 - 洼泥 - [foobox 博客]</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 15 Mar 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://dream7180.github.io/tags/foobox/" rel="self" type="application/rss+xml" /><item>
-    <title>foobox 8.0, foobar2000 皮肤配置 (DUI)</title>
+    <title>foobox 8.1, foobar2000 皮肤配置 (DUI)</title>
     <link>https://dream7180.github.io/2023/foobox-release/</link>
     <pubDate>Wed, 15 Mar 2023 00:00:00 &#43;0000</pubDate>
     <author>dreamawake</author>
@@ -17,7 +17,7 @@
     <pubDate>Wed, 15 Mar 2023 00:00:00 &#43;0000</pubDate>
     <author>dreamawake</author>
     <guid>https://dream7180.github.io/2023/foobox-changelog/</guid>
-    <description><![CDATA[2025-5-07, 8.0版 32位不再区分 6 重制版，已并入 foobox 8，64位和32位界面风格一致，皆支持背景变色（可以在 foobox 设置里关闭它），但只有32位才有完整的变色]]></description>
+    <description><![CDATA[2025-5-11, 8.1版 foobox 设置添加背景颜色变化浓度的设置。 修正了启用变色及打开 foobar2000 恢复播放时不能正常变色的问题。 ESLyric 组件更新 2025-5-07, 8.0版 32位不再区分 6 重制版，]]></description>
 </item>
 <item>
     <title>foobar2000 和 foobox 帮助与技巧</title>
