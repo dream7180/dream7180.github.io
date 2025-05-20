@@ -1,4 +1,4 @@
-# foobox 8.1, foobar2000 皮肤配置 (DUI)
+# foobox 8.2, foobar2000 皮肤配置 (DUI)
 
 foobox 是音频播放器 [foobar2000](http://www.foobar2000.org/) 的定制主题，基于默认用户界面 (DUI) 及 JSplitter (Spider Monkey Panel 版) 组件，支持最新的 foobar2000 for Windows 32 位及 64 位版，符合主流软件的审美，扩展功能丰富并保持软件的流畅运行。
 \
@@ -29,42 +29,6 @@ foobox 中文版适用于 foobar2000 汉化版 by [Asion](https://www.cnblogs.co
 
 * 到上面的 Github 或 Gitee 项目主页 Releases (发行版) 页面下载最新的安装包，请确保您的系统已安装了 foobar2000 汉化版。  
 * 支持 32 位及 64 位 foobar2000，其中 32 位版本加入 UI Hacks 组件，适合喜欢隐藏菜单栏状态栏 UI 的朋友，并拥有完整的界面变色效果。  
-<!--* 感谢[南陇居士](https://www.nljs.site/)制作的整合安装包: [https://www.nljs.site/foobar2000.html](https://www.nljs.site/foobar2000.html)
-
-> **【手动安装】**
-
-{{< admonition warning "注意" >}}
-由于所依赖的组件 JSplitter 目前只有 32 位，故暂不支持 foobar2000 x64 版本。
-{{< /admonition >}}
-
-1. 下载和安装 foobar2000 汉化版：
-
-* [智享阁Yeyo 汉化版 2.x](https://www.esnpc.com/foobar2000-20-simplified-chinese-version/)，下载 32 位的，或
-* [Asion 汉化版 1.6.16 版](https://www.cnblogs.com/asionwu)，注意不要使用 Plus 版，它只集成至 foobox 7.8
-
-2. 下载最新的 Release 包，解压后：
-
-* 复制 themes 文件夹到已有的 foobar2000 中文汉化版目录下;
-* 复制 profile 里的文件夹到 foobar2000 用户配置目录下.
-* 简介面板 (作者 Wil-B) 需要 [fontawesome-webfont.ttf](https://ghproxy.com/https://github.com/beakerbrowser/beakerbrowser.com/raw/master/fonts/fontawesome-webfont.ttf) 字体，请复制到 C:\Windows\Fonts 目录下. 简介面板的完整功能需要连接外网，请自行解决.
-
-{{< admonition warning "便携版" >}}
-便携版，profile 位于 foobar2000 根目录下。目录结构如下:
-{{< /admonition >}}
-![alt](portable.png)
-
-{{< admonition warning "非便携版" >}}
-非便携版，即各用户使用独立配置文件，用户配置文件夹位于：\
-**C:\Users\用户名\AppData\Roaming\foobar2000**  (1.x版)\
-**C:\Users\用户名\AppData\Roaming\foobar2000-v2**  (2.x版)\
-目录结构如下 (2.x版为例):
-{{< /admonition >}}
-![alt](nonportable.png#pic_left)
-
-> **【额外的视频面板整合】**
-
-从 foobox 7.16 版开始支持整合 foo-youtube 以及 foo-mpv 视频面板到主界面。标准的 release 包没有视频面板组件和主题文件，如需要该功能可下载视频面板整合包([github](https://github.com/dream7180/foobox-cn/releases/tag/video) | [gitee](https://gitee.com/dream7180/foobox-cn/releases/tag/video))，解压后按上面类似的方法安装。完成后可以在 “主菜单--视图--布局--快速设置”里切换各种 foobox 布局组合。
--->
 
 > **【相关网站】**
 

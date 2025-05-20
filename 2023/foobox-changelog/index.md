@@ -1,10 +1,11 @@
 # foobox 更新日志
 
 <img src="changelog.png" width="325">
-{{< admonition success "2025-5-11, 8.1版" >}}
+{{< admonition success "2025-5-20, 8.2版" >}}
+* 封面浏览面板添加缓存索引 (封面载入才会建立索引，请花时间浏览一遍封面)，缓存和索引完整时将极大加快封面的载入速度。
 * foobox 设置添加背景颜色变化浓度的设置。
 * 修正了启用变色及打开 foobar2000 恢复播放时不能正常变色的问题。
-* ESLyric 组件更新
+* 组件升级： ESLyric (1.0.3.1)，JSPlitter (4.0.1)。
 {{< /admonition >}}
 {{< admonition success "2025-5-07, 8.0版" >}}
 * 32位不再区分 6 重制版，已并入 foobox 8，64位和32位界面风格一致，皆支持背景变色（可以在 foobox 设置里关闭它），但只有32位才有完整的变色效果(由于 UI_Hacks 没有64位)。
