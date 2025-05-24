@@ -4,7 +4,7 @@
         <link>https://dream7180.github.io/posts/</link>
         <description>所有文章 | 洼泥 - [foobox 博客]</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 06 Feb 2025 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://dream7180.github.io/posts/" rel="self" type="application/rss+xml" /><item>
-    <title>foobox 8.2, foobar2000 皮肤配置 (DUI)</title>
+    <title>foobox 8.3, foobar2000 皮肤配置 (DUI)</title>
     <link>https://dream7180.github.io/2023/foobox-release/</link>
     <pubDate>Wed, 15 Mar 2023 00:00:00 &#43;0000</pubDate>
     <author>dreamawake</author>
@@ -17,7 +17,7 @@
     <pubDate>Wed, 15 Mar 2023 00:00:00 &#43;0000</pubDate>
     <author>dreamawake</author>
     <guid>https://dream7180.github.io/2023/foobox-changelog/</guid>
-    <description><![CDATA[2025-5-20, 8.2版 封面浏览面板添加缓存索引 (封面载入才会建立索引，请花时间浏览一遍封面)，缓存和索引完整时将极大加快封面的载入速度。 foobox 设置添加背景颜]]></description>
+    <description><![CDATA[2025-5-24, 8.3版 解决封面浏览面板初始缓存封面时资源占用过大而卡顿甚至崩溃的问题。 优化封面缓存的调用。 foobox 设置添加封面缓存尺寸自定义。 组件升级：JSP]]></description>
 </item>
 <item>
     <title>OpenWrt 主路由配置笔记</title>
