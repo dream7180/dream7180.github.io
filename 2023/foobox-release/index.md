@@ -1,4 +1,4 @@
-# foobox 8.3, foobar2000 皮肤配置 (DUI)
+# foobox 8.4, foobar2000 皮肤配置 (DUI)
 
 foobox 是音频播放器 [foobar2000](http://www.foobar2000.org/) 的定制主题，基于默认用户界面 (DUI) 及 JSplitter (Spider Monkey Panel 版) 组件，支持最新的 foobar2000 for Windows 32 位及 64 位版，符合主流软件的审美，扩展功能丰富并保持软件的流畅运行。
 \
@@ -22,7 +22,7 @@ foobox 中文版适用于 foobar2000 汉化版 by [Asion](https://www.cnblogs.co
 * [简介面板](https://github.com/Wil-B/Biography)作者 Wil-B;  
 * 网络电台列表收集自 [范明明](https://github.com/fanmingming)、[Kimentanm](https://github.com/Kimentanm).  
 
-感谢 fb2k 折腾群的好友对 foobox 的编写提供众多支持， Asion, Elia, always beta, ttsping, 南陇居士(Nanlon), 添加硬件, 唐人清风, BTX, Asooo, Jensen, 庆军等。
+感谢 fb2k 折腾群的好友对 foobox 的编写提供众多支持， Asion, Elia, always beta, ttsping, 南陇居士(Nanlon), 添加硬件, 唐人清风, BTX, Asooo, Jensen, 庆军，Sullivan等。
 感谢所有使用和支持 foobox 的网友。 
 
 > **【安装包】**

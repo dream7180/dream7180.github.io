@@ -1,6 +1,10 @@
 # foobox 更新日志
 
 <img src="changelog.png" width="325">
+{{< admonition success "2025-6-04, 8.4版" >}}
+* 主要面板的界面和脚本优化及修正已知 bugs.
+* 组件升级：JSPlitter (4.0.4)，ESLyric (1.0.3.5).
+{{< /admonition >}}
 {{< admonition success "2025-5-24, 8.3版" >}}
 * 解决封面浏览面板初始缓存封面时资源占用过大而卡顿甚至崩溃的问题。
 * 优化封面缓存的调用。
