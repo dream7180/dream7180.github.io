@@ -1,4 +1,4 @@
-# foobox 8.4, foobar2000 皮肤配置 (DUI)
+# foobox 8.5, foobar2000 皮肤配置 (DUI)
 
 foobox 是音频播放器 [foobar2000](http://www.foobar2000.org/) 的定制主题，基于默认用户界面 (DUI) 及 JSplitter (Spider Monkey Panel 版) 组件，支持最新的 foobar2000 for Windows 32 位及 64 位版，符合主流软件的审美，扩展功能丰富并保持软件的流畅运行。
 \
@@ -28,7 +28,7 @@ foobox 中文版适用于 foobar2000 汉化版 by [Asion](https://www.cnblogs.co
 > **【安装包】**
 
 * 到上面的 Github 或 Gitee 项目主页 Releases (发行版) 页面下载最新的安装包，请确保您的系统已安装了 foobar2000 汉化版。  
-* 支持 32 位及 64 位 foobar2000，其中 32 位版本加入 UI Hacks 组件，适合喜欢隐藏菜单栏状态栏 UI 的朋友，并拥有完整的界面变色效果。  
+* 支持 32 位及 64 位 foobar2000，绿色安装，自由便捷。  
 
 > **【相关网站】**
 

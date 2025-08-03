@@ -1,6 +1,11 @@
 # foobox 更新日志
 
 <img src="changelog.png" width="325">
+{{< admonition success "2025-8-03, 8.5版" >}}
+* 脚本优化及修正已知 bugs.
+* 64 位添加 foo_openhacks 组件，默认隐藏菜单栏和状态栏，界面变色整体化.
+* 组件升级：JSPlitter (4.0.4.4)，ESLyric (1.0.5.1).
+{{< /admonition >}}
 {{< admonition success "2025-6-04, 8.4版" >}}
 * 主要面板的界面和脚本优化及修正已知 bugs.
 * 组件升级：JSPlitter (4.0.4)，ESLyric (1.0.3.5).
