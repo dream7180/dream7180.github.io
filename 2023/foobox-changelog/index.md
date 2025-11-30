@@ -1,6 +1,11 @@
 # foobox 更新日志
 
 <img src="changelog.png" width="325">
+{{< admonition success "2025-11-30, 8.6版" >}}
+* foobox 设置添加显示主菜单的选项，32 位是标题栏模拟的主菜单栏，64 位为程序主菜单栏.
+* 优化简介面板，淘汰 ActiveX 及 vbs 的方式下载，修正代码来自 @regorxxx.
+* 播放列表数量大于 50 时将不在任何菜单中列举，以及其他代码优化.
+{{< /admonition >}}
 {{< admonition success "2025-8-03, 8.5版" >}}
 * 脚本优化及修正已知 bugs.
 * 64 位添加 foo_openhacks 组件，默认隐藏菜单栏和状态栏，界面变色整体化.

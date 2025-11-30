@@ -6,7 +6,7 @@
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 06 Feb 2025 00:00:00 &#43;0000</lastBuildDate>
             <atom:link href="https://dream7180.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
-    <title>foobox 8.5, foobar2000 皮肤配置 (DUI)</title>
+    <title>foobox 8.6, foobar2000 皮肤配置 (DUI)</title>
     <link>https://dream7180.github.io/2023/foobox-release/</link>
     <pubDate>Wed, 15 Mar 2023 00:00:00 &#43;0000</pubDate>
     <author>dreamawake</author>
@@ -19,7 +19,7 @@
     <pubDate>Wed, 15 Mar 2023 00:00:00 &#43;0000</pubDate>
     <author>dreamawake</author>
     <guid>https://dream7180.github.io/2023/foobox-changelog/</guid>
-    <description><![CDATA[2025-8-03, 8.5版 脚本优化及修正已知 bugs. 64 位添加 foo_openhacks 组件，默认隐藏菜单栏和状态栏，界面变色整体化. 组件升级：JSPlitter (4.0.4.4)，ESL]]></description>
+    <description><![CDATA[2025-11-30, 8.6版 foobox 设置添加显示主菜单的选项，32 位是标题栏模拟的主菜单栏，64 位为程序主菜单栏. 优化简介面板，淘汰 ActiveX 及 vbs 的方式下载，修正代码来自 @regorxxx.]]></description>
 </item>
 <item>
     <title>OpenWrt 主路由配置笔记</title>
