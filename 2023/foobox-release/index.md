@@ -1,6 +1,6 @@
-# foobox 8.6, foobar2000 皮肤配置 (DUI)
+# foobox 8.7, foobar2000 皮肤配置 (DUI)
 
-foobox 是音频播放器 [foobar2000](http://www.foobar2000.org/) 的定制主题，基于默认用户界面 (DUI) 及 JSplitter (Spider Monkey Panel 版) 组件，支持最新的 foobar2000 for Windows 32 位及 64 位版，符合主流软件的审美，扩展功能丰富并保持软件的流畅运行。
+foobox 是音频播放器 [foobar2000](https://www.foobar2000.org/) 的定制主题，基于默认用户界面 (DUI) 及 [JSplitter (Spider Monkey Panel 版)](https://foobar2000.club/forum/viewtopic.php?t=6378) 组件，支持最新的 foobar2000 for Windows 32 位及 64 位版，符合主流软件的审美，扩展功能丰富并保持软件的流畅运行。
 \
 \
 **[项目 GitHub 主页](https://github.com/dream7180/foobox-cn)** |  **[项目Gitee 主页](https://gitee.com/dream7180/foobox-cn)**
@@ -32,7 +32,7 @@ foobox 中文版适用于 foobar2000 汉化版 by [Asion](https://www.cnblogs.co
 
 > **【相关网站】**
 
-foobar2000 官方网站：[http://www.foobar2000.org](http://www.foobar2000.org/)
+foobar2000 官方网站：[http://www.foobar2000.org](https://www.foobar2000.org/)
 
 Aion 汉化版博客：[asionwu - 博客园 (cnblogs.com)](https://www.cnblogs.com/asionwu)
 
