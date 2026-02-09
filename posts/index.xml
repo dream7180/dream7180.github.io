@@ -4,7 +4,7 @@
         <link>https://dream7180.github.io/posts/</link>
         <description>所有文章 | 洼泥 - [foobox 博客]</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 06 Feb 2025 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://dream7180.github.io/posts/" rel="self" type="application/rss+xml" /><item>
-    <title>foobox 8.8, foobar2000 皮肤配置 (DUI)</title>
+    <title>foobox 8.9, foobar2000 皮肤配置 (DUI)</title>
     <link>https://dream7180.github.io/2023/foobox-release/</link>
     <pubDate>Wed, 15 Mar 2023 00:00:00 &#43;0000</pubDate>
     <author>dreamawake</author>
@@ -17,7 +17,7 @@
     <pubDate>Wed, 15 Mar 2023 00:00:00 &#43;0000</pubDate>
     <author>dreamawake</author>
     <guid>https://dream7180.github.io/2023/foobox-changelog/</guid>
-    <description><![CDATA[2025-12-30, 8.8版 修正重新打开程序有时歌词面板颜色不能恢复的问题. 修正改变字体播放列表面板颜色会重置的问题. 修正播放列表菜单里的排序反向无效的问题.]]></description>
+    <description><![CDATA[2026-02-09, 8.9版 修正歌词不变色时导致背景不变色的bug. openhacks中英版本不对应不再导致崩溃，但会提示并限制功能. 其他脚本优化，组件升级.]]></description>
 </item>
 <item>
     <title>OpenWrt 主路由配置笔记</title>
