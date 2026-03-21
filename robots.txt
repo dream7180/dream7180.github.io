@@ -61,4 +61,4 @@ Disallow: /
 User-agent: ZoominfoBot
 Disallow: /
 
-Sitemap: https://dream7180.github.io/en/sitemap.xml
+Sitemap: https://dream7180.github.io/sitemap.xml

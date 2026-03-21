@@ -1,6 +1,11 @@
 # foobox 更新日志
 
 <img src="changelog.png" width="325">
+{{< admonition success "2026-03-21, 8.10版" >}}
+* 界面细节完善和修正.
+* 封面浏览面板去除平滑滚动，避免快速滚动时带来的卡顿感.
+* 其他脚本优化，组件升级.
+{{< /admonition >}}
 {{< admonition success "2026-02-09, 8.9版" >}}
 * 修正歌词不变色时导致背景不变色的bug.
 * openhacks中英版本不对应不再导致崩溃，但会提示并限制功能.
