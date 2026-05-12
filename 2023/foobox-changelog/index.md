@@ -1,6 +1,16 @@
 # foobox 更新日志
 
 <img src="changelog.png" width="325">
+{{< admonition success "2026-05-12, 8.11版" >}}
+* 64位界面终于和32位完全一致，统一使用基于 [openhacks](https://github.com/ttsping/foo_openhacks) 的 [openhacks_mod](https://github.com/simear2004/foo_openhacks_mod)，感谢组件两位作者 ttsping 和 yeyo;
+* 大部分图标换成更加高效和美观的字体图标;
+* foobox 设置新增启用 D2D 渲染的选项，推荐开启以使用硬件加速;
+* foobox 设置新增选项幻彩进度条;
+* 播放列表视图设置里现在支持添加多个外部应用程序，以便在右键菜单里调用;
+* 播放列表管理器的添加网络电台列表菜单，现在不再在 foobox 设置里配置，而是直接在菜单里呼出文件进行编辑;
+* 重构了设置保存文件，更多的常用设置保存到专有配置文件，以免升级丢失设置，由于重构，此次升级部分以前的设置将丢失;
+* 消灭已知 bug 及效率优化，不一一列出.
+{{< /admonition >}}
 {{< admonition success "2026-03-21, 8.10版" >}}
 * 界面细节完善和修正.
 * 封面浏览面板去除平滑滚动，避免快速滚动时带来的卡顿感.
