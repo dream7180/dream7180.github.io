@@ -6,7 +6,7 @@
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 06 Feb 2025 00:00:00 &#43;0000</lastBuildDate>
             <atom:link href="https://dream7180.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
-    <title>foobox 8.11, foobar2000 皮肤配置 (DUI)</title>
+    <title>foobox 8.12, foobar2000 皮肤配置 (DUI)</title>
     <link>https://dream7180.github.io/2023/foobox-release/</link>
     <pubDate>Wed, 15 Mar 2023 00:00:00 &#43;0000</pubDate>
     <author>dreamawake</author>
@@ -19,7 +19,7 @@
     <pubDate>Wed, 15 Mar 2023 00:00:00 &#43;0000</pubDate>
     <author>dreamawake</author>
     <guid>https://dream7180.github.io/2023/foobox-changelog/</guid>
-    <description><![CDATA[2026-05-12, 8.11版 64位界面终于和32位完全一致，统一使用基于 openhacks 的 openhacks_mod，感谢组件两位作者 ttsping 和 yeyo; 大部分图标换成更加高效和美观的]]></description>
+    <description><![CDATA[2026-05-13, 8.12版 64位界面终于和32位完全一致，统一使用基于 openhacks 的 openhacks_mod，感谢组件两位作者 ttsping 和 yeyo; 大部分图标换成更加高效和美观的]]></description>
 </item>
 <item>
     <title>OpenWrt 主路由配置笔记</title>

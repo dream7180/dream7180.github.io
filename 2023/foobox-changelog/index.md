@@ -1,7 +1,7 @@
 # foobox 更新日志
 
 <img src="changelog.png" width="325">
-{{< admonition success "2026-05-12, 8.11版" >}}
+{{< admonition success "2026-05-13, 8.12版" >}}
 * 64位界面终于和32位完全一致，统一使用基于 [openhacks](https://github.com/ttsping/foo_openhacks) 的 [openhacks_mod](https://github.com/simear2004/foo_openhacks_mod)，感谢组件两位作者 ttsping 和 yeyo;
 * 大部分图标换成更加高效和美观的字体图标;
 * foobox 设置新增启用 D2D 渲染的选项，推荐开启以使用硬件加速;
