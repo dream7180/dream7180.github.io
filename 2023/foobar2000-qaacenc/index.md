@@ -1,4 +1,4 @@
-# qaac 2.85 编码器包 (整合CoreAudioToolbox，免itunes)
+# qaac 2.88 编码器包 (整合CoreAudioToolbox，免itunes)
 
 ![quicktime](quicktime.png)  
 **【介绍】**   

@@ -1,6 +1,12 @@
 # foobox 更新日志
 
 <img src="changelog.png" width="325">
+{{< admonition success "2026-05-30, 8.13版" >}}
+* 播放列表视图的封面列不再跟随面板宽度改变而改变大小，避免专辑最小行数随之变化。
+* 整合右栏封面和歌曲信息属性面板，减少JSP分离器面板数量。
+* openhacks_mod 组件升级，现在支持最小化或关闭时隐藏到系统托盘的设置。
+* 修正已知 bug 及其他优化。
+{{< /admonition >}}
 {{< admonition success "2026-05-13, 8.12版" >}}
 * 64位界面终于和32位完全一致，统一使用基于 [openhacks](https://github.com/ttsping/foo_openhacks) 的 [openhacks_mod](https://github.com/simear2004/foo_openhacks_mod)，感谢组件两位作者 ttsping 和 yeyo;
 * 大部分图标换成更加高效和美观的字体图标;

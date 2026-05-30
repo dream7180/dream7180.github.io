@@ -4,7 +4,7 @@
         <link>https://dream7180.github.io/categories/foobar2000/</link>
         <description>foobar2000 - 分类 - 洼泥 - [foobox 博客]</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 18 Mar 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://dream7180.github.io/categories/foobar2000/" rel="self" type="application/rss+xml" /><item>
-    <title>foobox 8.12, foobar2000 皮肤配置 (DUI)</title>
+    <title>foobox 8.13, foobar2000 皮肤配置 (DUI)</title>
     <link>https://dream7180.github.io/2023/foobox-release/</link>
     <pubDate>Wed, 15 Mar 2023 00:00:00 &#43;0000</pubDate>
     <author>dreamawake</author>
@@ -17,7 +17,7 @@
     <pubDate>Wed, 15 Mar 2023 00:00:00 &#43;0000</pubDate>
     <author>dreamawake</author>
     <guid>https://dream7180.github.io/2023/foobox-changelog/</guid>
-    <description><![CDATA[2026-05-13, 8.12版 64位界面终于和32位完全一致，统一使用基于 openhacks 的 openhacks_mod，感谢组件两位作者 ttsping 和 yeyo; 大部分图标换成更加高效和美观的]]></description>
+    <description><![CDATA[2026-05-30, 8.13版 播放列表视图的封面列不再跟随面板宽度改变而改变大小，避免专辑最小行数随之变化。 整合右栏封面和歌曲信息属性面板，减少JSP分离器面]]></description>
 </item>
 <item>
     <title>foobar2000 和 foobox 帮助与技巧</title>
@@ -36,7 +36,7 @@
     <description><![CDATA[foobox 电台列表的 logo 封面显示]]></description>
 </item>
 <item>
-    <title>qaac 2.85 编码器包 (整合CoreAudioToolbox，免itunes)</title>
+    <title>qaac 2.88 编码器包 (整合CoreAudioToolbox，免itunes)</title>
     <link>https://dream7180.github.io/2023/foobar2000-qaacenc/</link>
     <pubDate>Sat, 18 Mar 2023 00:00:00 &#43;0000</pubDate>
     <author>dreamawake</author>
